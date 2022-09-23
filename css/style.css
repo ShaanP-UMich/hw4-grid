@@ -169,42 +169,26 @@ first div in the grid  and place it in the grid. */
   grid-column: 2 / span 1;
 }
 
-.about {
+.about, .about-image{
   grid-row-start: 2;
 }
 
-.method {
+.method, .method-image {
   grid-row-start: 3;
 }
 
-.clients {
+.clients, .clients-image {
   grid-row-start: 4;
 }
 
-.contact {
+.contact, .contact-image {
   grid-row-start: 5;
 }
 
 .about-image, .method-image, .clients-image, .contact-image {
   max-height: 600px;
   overflow: hidden;
-  grid-column: 1 / span 3;
-}
-
-.about-image {
-  grid-row-start: 2;
-}
-
-.method-image {
-  grid-row-start: 3;
-}
-
-.clients-image {
-  grid-row-start: 4;
-}
-
-.contact-image {
-  grid-row-start: 5;
+  grid-column: 1 / -1;
 }
 
 /* Step 8: Write the selector/rule property to style the .text-block class. */
